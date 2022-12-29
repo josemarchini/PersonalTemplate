@@ -1,0 +1,79 @@
+
+
+/*la tabella customers tiene un ancho de 400 y esta en el centro*/
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #5b9684;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #5b9684;}
+  
+  #customers tr:hover {background-color: #5b9684;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(28,182,152,.8);
+    color: rgb(12, 12, 12);
+  }
+  
+  .myButton {
+      box-shadow: 0px 1px 0px 0px #f0f7fa;
+      background:linear-gradient(to bottom, #04AA6D 5%, #04AA6D 100%);
+      background-color:#04AA6D;
+      border-radius:6px;
+      border:1px solid #04AA6D;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:6px 24px;
+      text-decoration:none;
+      text-shadow:0px -1px 0px #5b6178;
+  }
+  .myButton:hover {
+      background:linear-gradient(to bottom, #04AA6D 5%, #04AA6D 100%);
+      background-color:#04AA6D;
+  }
+  .myButton:active {
+      position:relative;
+      top:1px;
+  }
+  
+  .myButtonD {
+      box-shadow: 0px 1px 0px 0px #3c748b;
+      background:linear-gradient(to bottom, #ed3453 5%, #d10202 100%);
+      background-color:#ed3453;
+      border-radius:6px;
+      border:1px solid #cf0606;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:6px 24px;
+      text-decoration:none;
+      text-shadow:0px -1px 0px #5b6178;
+  }
+  .myButtonD:hover {
+      background:linear-gradient(to bottom, #d10202 5%, #ed3453 100%);
+      background-color:#d10202;
+  }
+  .myButtonD:active {
+      position:relative;
+      top:1px;
+  }
+  
