@@ -251,10 +251,11 @@ html{
 }
 .skills .skill .barra-skill{
     height: 8px;
-    width: 80%;
+    width: 60%;
     background-color: #131517;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin: auto;
 }
 .skills .skill .progreso{
     background-color: #1CB698;
@@ -282,7 +283,7 @@ html{
 }
 @keyframes Python {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .SQL{
@@ -291,7 +292,7 @@ html{
 }
 @keyframes SQL {
     0%{width: 0%;}
-    100%{width: 85%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .Blokchain{
@@ -300,7 +301,7 @@ html{
 }
 @keyframes Blokchain {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .Javascript{
@@ -309,7 +310,7 @@ html{
 }
 @keyframes Javascript {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .Wordpress{
@@ -318,7 +319,7 @@ html{
 }
 @keyframes Wordpress {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .comunicacion{
@@ -327,7 +328,7 @@ html{
 }
 @keyframes comunicacion {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .trabajo{
@@ -336,7 +337,7 @@ html{
 }
 @keyframes trabajo {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .learning{
@@ -345,7 +346,7 @@ html{
 }
 @keyframes learning {
     0%{width: 0%;}
-    100%{width: 85%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .analisis{
@@ -354,7 +355,7 @@ html{
 }
 @keyframes analisis {
     0%{width: 0%;}
-    100%{width: 95%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .proyect{
@@ -363,7 +364,7 @@ html{
 }
 @keyframes proyect {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 99%;}
 }
 /* SECCION CURRICULUM */
 .curriculum{
