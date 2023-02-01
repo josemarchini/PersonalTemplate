@@ -11,14 +11,14 @@ from flask_cors import CORS, cross_origin
 #app = Flask(__name__)
 app = Flask(__name__, static_folder='templates')
 
-#cors=CORS(app)
-#app.config['CORS_HEADERS'] = 'Content-Type'
+cors=CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['MYSQLHOST'] = 'containers-us-west-147.railway.app'
 app.config['MYSQLUSER'] = 'root'
 app.config['MYSQLPASSWORD'] = 'nk9zeeEQucaPJTOm9OJs'
 app.config['MYSQLDATABASE'] = 'railway'    
 app.config['MYSQLPORT'] = '7091'
-app.config['MYSQL_URL'] = 'mysql://${{ MYSQLUSER }}:${{ MYSQLPASSWORD }}@${{ MYSQLHOST }}:${{ MYSQLPORT }}/${{ MYSQLDATABASE }}'
+#app.config['MYSQL_URL'] = 'mysql://${{ MYSQLUSER }}:${{ MYSQLPASSWORD }}@${{ MYSQLHOST }}:${{ MYSQLPORT }}/${{ MYSQLDATABASE }}'
 mysql = MySQL(app)
 
 
