@@ -12,7 +12,7 @@ from flask_cors import CORS, cross_origin
 app = Flask(__name__, static_folder='templates')
 
 cors=CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+#app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['MYSQL_HOST'] = 'containers-us-west-147.railway.app'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'nk9zeeEQucaPJTOm9OJs'
@@ -130,4 +130,4 @@ def publicFiles(path):
 
 #name == main
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(None, 3000, True)
