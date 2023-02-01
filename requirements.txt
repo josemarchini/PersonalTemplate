@@ -7,3 +7,4 @@ MarkupSafe==2.1.2
 Werkzeug==2.2.2
 flask_mysqldb==1.0.1
 flask_cors==3.0.10
+mysqlclient==2.1.1
