@@ -11,13 +11,13 @@ from flask_cors import CORS, cross_origin
 #app = Flask(__name__)
 app = Flask(__name__, static_folder='templates')
 
-cors=CORS(app)
+#cors=CORS(app)
 #app.config['CORS_HEADERS'] = 'Content-Type'
-app.config['MYSQL_HOST'] = 'containers-us-west-147.railway.app'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'nk9zeeEQucaPJTOm9OJs'
-app.config['MYSQL_DB'] = 'railway'    
-app.config['MYSQL_PORT'] = '7091'
+app.config['MYSQLHOST'] = 'containers-us-west-147.railway.app'
+app.config['MYSQLUSER'] = 'root'
+app.config['MYSQLPASSWORD'] = 'nk9zeeEQucaPJTOm9OJs'
+app.config['MYSQLDATABASE'] = 'railway'    
+app.config['MYSQLPORT'] = '7091'
 app.config['MYSQL_URL'] = 'mysql://${{ MYSQLUSER }}:${{ MYSQLPASSWORD }}@${{ MYSQLHOST }}:${{ MYSQLPORT }}/${{ MYSQLDATABASE }}'
 mysql = MySQL(app)
 
@@ -130,4 +130,6 @@ def publicFiles(path):
 
 #name == main
 if __name__ == '__main__':
-    app.run(None, 3000, True)
+    #app.run(None, 3000, True)   --- 3000 è la porta inicialmente
+
+    app.run(host="0.0.0.0", port=5000, debug=True) 
