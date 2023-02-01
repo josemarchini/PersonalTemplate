@@ -130,4 +130,4 @@ def publicFiles(path):
 
 #name == main
 if __name__ == '__main__':
-    app.run(None, 3000, True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
