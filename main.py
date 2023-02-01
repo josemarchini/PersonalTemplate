@@ -13,12 +13,10 @@ app = Flask(__name__, static_folder='templates')
 
 cors=CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
-app.config['MYSQLHOST'] = 'containers-us-west-147.railway.app'
-app.config['MYSQLUSER'] = 'root'
-app.config['MYSQLPASSWORD'] = 'nk9zeeEQucaPJTOm9OJs'
-app.config['MYSQLDATABASE'] = 'railway'    
-app.config['MYSQLPORT'] = '7091'
-#app.config['MYSQL_URL'] = 'mysql://${{ MYSQLUSER }}:${{ MYSQLPASSWORD }}@${{ MYSQLHOST }}:${{ MYSQLPORT }}/${{ MYSQLDATABASE }}'
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'Exitosox100pre'
+app.config['MYSQL_DB'] = 'pagepersonal'
 mysql = MySQL(app)
 
 
@@ -130,6 +128,6 @@ def publicFiles(path):
 
 #name == main
 if __name__ == '__main__':
-    #app.run(None, 3000, True)   --- 3000 è la porta inicialmente
+    app.run(None, 3000, True)   #--- 3000 è la porta inicialmente
 
-    app.run(host="0.0.0.0", port=5000, debug=True) 
+    #app.run(host="0.0.0.0", port=5000, debug=True) 
